@@ -1,0 +1,610 @@
+:root{
+    --primary-color:teal;
+    --text-color:white;
+    --btn-color:blueviolet;
+}
+p{
+    /*color: red;*/
+}
+
+#p3{
+    color: blue;
+}
+
+.green-text{
+    color: green;
+}
+
+#h{
+    font-size: 50px;
+}
+
+.underline-h{
+    text-decoration: underline;
+}
+
+#bg{
+    background-color: yellow;
+}
+ 
+body{
+  /*  background-color: rosybrown;*/
+    background-image: url('image/lefttop.png'),url('image/rightbottom.png');
+    background-repeat: no-repeat;
+   /* background-position: 30px 60px;*/
+    /*background-size:cover; only use when you want to fill the proper background*/
+    background-attachment: scroll;
+    background-position: left top,right bottom;
+     border: 5px dotted black;
+}
+#border{
+    border-style: solid dotted dashed none;
+    border-width: 2px 5px 7px 1px;
+    border-color: red;
+    /*shortcut 
+    border: 5px solid royalblue;
+    */
+    border-radius: 10px;
+}
+#div1{
+    border: 5px solid red;
+    background-color: slategray;
+    width: 70%;
+ /*   height: 500px;
+    min-width: ;
+    min-height: ;
+    max-width: ;
+    max-width: ;
+   padding-top: 10px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 30px;
+    */
+    padding: 10px;
+}
+.div2{
+    border: 5px solid red;
+    background-color: springgreen;
+    padding: 25px;
+}
+#margin{
+    margin-bottom: 25px;                   /*margin can be in negative also*/
+}
+#colsp{
+    border: 5px dashed blue;
+    margin-top: 50px;
+}
+#text{
+    width: 500px;
+    border: 3px solid violet;
+    color: blueviolet;
+    text-align: right,justify;
+    text-decoration: overline;
+    text-transform: lowercase;
+    line-height: 50px;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+#extraspace{
+    border: 5px solid navy;
+    white-space: pre;
+    width: 500px;
+}
+#shadow{
+    font-size: 50px;
+    text-shadow: 5px 7px 5px blue;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+}
+a:link{
+  color:hotpink ;
+}
+a:visited{
+color: red;
+}
+a :hover{
+color: lightcoral;
+}
+a:active{
+color: mediumblue;
+}
+h1{
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: 'Roboto', sans-serif;
+}
+#parent{
+    border: 1px solid red;
+   /* width: 800px;*/
+   width: 50vw;
+   height: 50vh;
+
+}
+#child{
+
+    border: 2px solid blue;
+        width: 50%; 
+        cursor: s-resize;
+}
+#boxshadow{
+    border: 2px solid green;
+    width: 500px;
+    background-color: indianred;
+    margin: 70px;
+    padding: 30px;
+    box-shadow: 10px 10px 5px 4px gray;   /*x axis ,y-axis, blar px, spred radius,shadow color*/
+}
+#opacity:hover{
+    border: 1px solid aqua;
+    width: 500px;
+    height: 200px;
+    background-color: green;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+img:hover{
+  opacity: 0.7;
+  filter: grayscale(100%);  /*this is black and whilte flter */
+}
+#linear-gradient{
+    height: 500px;
+    border: 1px solid yellow;
+    background-image: linear-gradient(to right, green,blue,red,yellow);
+}
+#radial-gradient{
+    height: 500px;
+    border: 1px solid green;
+    background-image: radial-gradient(circle,red,green,blue 20%,yellow);  /*by default the shape is ecllipse*/
+}
+#overflow{
+    background-color: grey;
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+textarea{
+    resize: both;    /*if we use resize both property then user also resize its by itself*/
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+}
+ol{
+    list-style-type: upper-roman;
+}
+li{
+    border: 1px solid black;
+}
+table{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 15px,20px;
+    table-layout: fixed;
+    width: 50%;
+}
+caption{
+    border: 1px solid black;
+}
+tr{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid black;
+    height: 30px;
+}
+td{
+    border: 1px dashed blue;
+    height: 25px;
+    text-align: center;
+}
+#fun{
+    background-color: var(--primary-color);
+    height: 200px;
+    width: calc(100%-200px);
+}
+#var{
+   padding: 10px 30px;
+   margin: 20px;
+   margin-bottom: 20px;
+   background-color: var(--btn-color);
+   color: var(--text-color);
+   text-decoration: none;
+}
+#objectfit{
+    border: 1px solid blue;
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+     object-position: right;
+}
+.pseudo:nth-child(odd){
+  color: red;
+}
+#pseudoelement::first-letter{
+  font-size: 40px;
+  color: red;
+}
+#h5{
+    
+    font-size: 40px;
+    color: rgb(10, 160, 48);
+}
+::selection{
+    color: red;
+    background-color: yellow;
+}
+/* display and visibility property
+ block
+ 1.start from new line.
+ 2.full width
+ 3.we can apply height and width
+
+ inline 
+ 1.inline is totally opposite to the block 
+
+ inline-block
+ 1.is a mix of both inline and block 
+ it takes first two property of the inline element and
+ one property of block element.
+ */
+ .display{
+     border: 1px solid black;
+     width: 300px;
+     height: 100px;
+     display: inline-block;
+ }
+ /*use of display none===this is also called visibilty  the differnece in both of them is u can see by applying css */
+ #dispnone{
+     /*display: none;*/
+     visibility: hidden;
+ }
+ /*css position
+ 1.static[default]
+ 2.relative
+ 3.fixed
+ 4.absolute
+ */
+
+ #parent{
+     border: 1px solid blue;
+     padding: 20px;
+     width: 50%;
+     height: 100px;
+     margin: 30px;
+     position: relative;
+ }
+ #one{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+ }
+ #two{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block; 
+    position: /*fixed*/absolute;   /*relative*/
+    /*top: 30px;
+    left: 50px;*/
+    /*top: 0px;
+   left: 0px;
+*/
+bottom: 10px;
+right: 10px;   
+}
+ 
+ #three{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block; 
+}
+ #parent2{
+  /*border: 1px solid black;*/
+  padding: 30px;
+  width: 50%;
+  height: 100px;
+  margin: 30px;
+
+ }
+ #four{
+     width: 100px;
+     height: 100px;
+     background-color: yellow;
+     position: relative;
+     display: inline-block;
+    z-index: 1;
+    }
+ #five{
+     width: 100px;
+     height: 100px;
+     background-color: green;
+     position: relative;
+     display: inline-block;
+     top: 50px;
+     left: -50px;
+    z-index: 3;
+ }
+ #six{
+     width: 100px;
+     height: 100px;
+     background-color: indigo;
+     position: relative;
+     display: inline-block;
+     top: 100px;
+     left: -100px;
+     z-index: 2;
+ }
+ #img1{
+    width: 100px;
+     height: auto;
+     float: left;
+     padding: 10px;
+ }
+ #img2{
+     width: 100px;
+     height: auto;
+     float: left;
+     padding: 10px;
+ }
+ #like{
+  background-color: indigo;
+  list-style-type: none;
+  overflow: auto;
+ }
+ .navigation{
+  color: antiquewhite;
+  padding: 10px 15px;
+  float: left;
+ }
+ #content{
+     width: 70%;
+     height: 200px;
+     background-color: aqua;
+     float: left;
+ }
+ #sidebar{
+     width: 30%;
+     height: 150px;
+     background-color: blue;
+     float: left;
+ }
+ #footer{
+     background-color: chartreuse;
+     clear: both;
+ }
+ #wrapper{
+     background-color: coral;
+    margin: 20px;
+    padding: 25px;
+ }
+ #transition2d{
+     background-color: chocolate;
+     text-decoration: none;
+     padding: 10px,20px;
+     
+ }
+ #transition2d:hover{
+   /* transform: translate(50px,50px);*/
+  /* transform: rotate(20deg);*/
+  /*transform: scale(2,2);*/
+  transform: skewX(20deg);
+     display: inline-block;
+ }
+ #cover{
+     width: 200px;
+     height: 200px;
+     margin: 150px;
+     border: 2px solid red;
+ }
+ #content2{
+     width: 200px;
+     height: 200p;
+     background-color: cyan;
+     transform:  perspective(300px) translate3d(50px ,50px,50px);        /*rotate3d(50,50,50,20deg);*/
+ }
+ #transition{
+     width: 100px;
+     background-color: darkblue;
+     height: 100px;
+     margin: 100px;
+      transition-property: width,background-color;
+      transition-duration: 1s;
+      transition-delay: 50ms;
+      /*transition: porperty,duration,timing-function,delay;*/
+    }
+#transition:hover{
+   width: 200px;
+  background-color: darkgoldenrod;
+}
+@keyframes change-color{
+    0%{background-color:darkgreen;border-radius: 0%;}
+    10%{background-color: orangered ;border-radius: 10%}
+    20%{ background-color: orchid;border-radius: 20%;}
+    30%{background-color: yellow;border-radius: 30%;}
+    40%{background-color: peru;border-radius: 40%;}
+    50%{background-color: blueviolet;border-radius: 50%;}
+    60%{background-color: brown;border-radius: 40%;}
+    70%{background-color: darkblue;border-radius: 30%;}
+    80%{background-color: darkcyan;border-radius: 20%;}
+    90%{background-color: darksalmon;border-radius: 10%;}
+    100%{background-color: darkred;border-radius: 0%;}
+}
+#animation{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    margin: 200p;
+    animation-name: change-color;
+     animation-duration: 4s;
+     animation-iteration-count: 3;
+     
+}
+#animation2{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    margin: 200p;
+    animation-name: change-color;
+     animation-duration: 4s;
+     animation-iteration-count: 3;
+     animation-direction: alternate-reverse;
+}
+
+@media screen{
+  #print2{
+      font-size: 30px;
+  }
+}
+@media print{
+#print2{
+    font-size: 40px;
+}
+#print{
+    display: none;
+}
+#divb{
+    width: 50%;
+}
+}
+#media1{
+    width: 70%;
+    height: 120px;
+    float: left;
+    background-color: darksalmon;
+}
+#media2{
+    width: 30%;
+    height: 120px;
+    float: left;
+    background-color: darkseagreen;
+}
+h8{
+    font-size: 100px;
+}
+h9{
+    font-size: 100px;
+}
+@media screen and (max-width: 768px){
+    #media1{
+        width: 50%;
+    }
+    #media2{
+        width: 50%;
+    }
+}
+@media screen and (max-width:400px){
+    #media1{
+        width: 100%;
+
+    }
+    #media2{
+        width: 100%;
+    }
+}
+#img1{
+    width: 100%;
+    height: auto;
+}
+#multiple-column{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 8px;
+    column-rule-color: darkseagreen ;
+}
+.flex-container{
+  background-color: darkslateblue;
+  display: flex;
+  /*flex-wrap: wrap-reverse;*/
+  flex-flow: row wrap;
+  justify-content:  center;
+  /*justify-content: flex-start;*/
+   /*justify-content: flex-end;*/
+   /*justify-content: space-around;*/
+   /*justify-content: space-between;*/
+   height: 70vh;
+   align-items: center;
+   /*align-items: flex-start;*/
+   flex-wrap: wrap;
+  /* align-content:space-between*/ ; /*space-around*/    /*flex-start*/
+
+}
+.flex-child{
+    background-color: darkseagreen;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+}
+#onee{
+ /*order: 3;*/
+ /*flex-grow: 1;*/
+ align-self: flex-start;
+}
+#twoo{
+ /*order: 1;*/
+ /*flex-grow: 2;*/
+ align-self: center;
+}
+#threee{
+   /*order: 2;*/
+   /*flex-grow: 1;*/
+   align-self: flex-end;
+}
+.grid-container{
+    background-color: darkturquoise;
+    padding: 40px;
+    display: grid;
+    grid-template-columns:  200px 300px 200px ;/*auto auto auto;*/
+   /* grid-template-rows: 100px 200px auto;*/
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content:  space-evenly; /*space-around*/   /* center*/
+    height: 600px;
+    align-content:space-evenly;
+}
+.grid-items{
+    background-color: floralwhite;
+    border: 1px solid rosybrown;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    
+}
+#grid1{
+   /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;*/
+}
+#grid5{
+    grid-area: 1/2/4/5;
+}
+#menu2{
+  grid-area: 'menu';
+}
+#main{
+   grid-area: 'main';
+}
+#footer{
+   grid-area: 'footer';
+}
+#header{
+   grid-area: 'header';
+}
+#right{
+ grid-area: 'right';
+}
